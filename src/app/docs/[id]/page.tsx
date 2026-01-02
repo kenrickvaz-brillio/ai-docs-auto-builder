@@ -18,6 +18,10 @@ import DocRenderer from '@/components/DocRenderer';
 import DiffPanel from '@/components/DiffPanel';
 import { Card } from '@/components/Cards';
 
+export function generateStaticParams() {
+    return [];
+}
+
 export default function DocViewerPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = use(params);
     const [doc, setDoc] = useState<GeneratedDoc | null>(null);
