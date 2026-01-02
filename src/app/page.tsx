@@ -82,7 +82,7 @@ export default function Dashboard() {
                 {recentDocs.map((doc) => (
                   <Link
                     key={doc.id}
-                    href={`/docs/${doc.id}`}
+                    href={`/docs?id=${doc.id}`}
                     className="flex items-center justify-between py-4 hover:bg-slate-50 -mx-6 px-6 transition-colors group"
                   >
                     <div className="flex items-center gap-4">

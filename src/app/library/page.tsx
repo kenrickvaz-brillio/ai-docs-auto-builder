@@ -121,7 +121,7 @@ export default function LibraryPage() {
 
                             <div className="mt-6 flex items-center gap-2">
                                 <Link
-                                    href={`/docs/${doc.id}`}
+                                    href={`/docs?id=${doc.id}`}
                                     className="flex-1 bg-slate-100 hover:bg-indigo-600 hover:text-white text-slate-700 py-2 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2"
                                 >
                                     <Eye className="w-4 h-4" />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, use } from 'react';
+import { useEffect, useState } from 'react';
 import { storage, GeneratedDoc } from '@/lib/storage';
 import { computeDiff, DiffResult } from '@/lib/diff';
 import {
@@ -10,7 +10,6 @@ import {
     History,
     CheckCircle2,
     Clock,
-    ExternalLink,
     ChevronRight
 } from 'lucide-react';
 import Link from 'next/link';
@@ -18,12 +17,7 @@ import DocRenderer from '@/components/DocRenderer';
 import DiffPanel from '@/components/DiffPanel';
 import { Card } from '@/components/Cards';
 
-export function generateStaticParams() {
-    return [];
-}
-
-export default function DocViewerPage({ params }: { params: Promise<{ id: string }> }) {
-    const { id } = use(params);
+export default function DocViewerClient({ id }: { id: string }) {
     const [doc, setDoc] = useState<GeneratedDoc | null>(null);
     const [diff, setDiff] = useState<DiffResult | null>(null);
     const [showDiff, setShowDiff] = useState(false);
