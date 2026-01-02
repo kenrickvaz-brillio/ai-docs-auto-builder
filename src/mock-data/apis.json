@@ -1,0 +1,143 @@
+[
+    {
+        "method": "POST",
+        "path": "/api/v1/auth/login",
+        "auth": false,
+        "params": {
+            "email": "string",
+            "password": "string"
+        },
+        "response": {
+            "token": "string",
+            "user": {
+                "id": "string",
+                "name": "string",
+                "role": "string"
+            }
+        },
+        "errors": [
+            {
+                "code": 401,
+                "message": "Invalid credentials"
+            },
+            {
+                "code": 400,
+                "message": "Missing required fields"
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "path": "/api/v1/audits",
+        "auth": true,
+        "params": {
+            "status": "string (optional)",
+            "limit": "number",
+            "offset": "number"
+        },
+        "response": {
+            "audits": [
+                {
+                    "id": "string",
+                    "hotelName": "string",
+                    "status": "string",
+                    "createdAt": "string"
+                }
+            ],
+            "total": "number"
+        },
+        "errors": [
+            {
+                "code": 401,
+                "message": "Unauthorized"
+            }
+        ]
+    },
+    {
+        "method": "POST",
+        "path": "/api/v1/audits",
+        "auth": true,
+        "params": {
+            "hotelId": "string",
+            "type": "string",
+            "metadata": "object"
+        },
+        "response": {
+            "id": "string",
+            "status": "pending"
+        },
+        "errors": [
+            {
+                "code": 400,
+                "message": "Invalid hotel ID"
+            },
+            {
+                "code": 401,
+                "message": "Unauthorized"
+            }
+        ]
+    },
+    {
+        "method": "GET",
+        "path": "/api/v1/audits/{id}",
+        "auth": true,
+        "params": {},
+        "response": {
+            "id": "string",
+            "hotelName": "string",
+            "sections": "array",
+            "findings": "array"
+        },
+        "errors": [
+            {
+                "code": 404,
+                "message": "Audit not found"
+            }
+        ]
+    },
+    {
+        "method": "PATCH",
+        "path": "/api/v1/audits/{id}",
+        "auth": true,
+        "params": {
+            "sections": "array",
+            "status": "string"
+        },
+        "response": {
+            "success": true
+        },
+        "errors": [
+            {
+                "code": 400,
+                "message": "Invalid status transition"
+            },
+            {
+                "code": 404,
+                "message": "Audit not found"
+            }
+        ]
+    },
+    {
+        "method": "POST",
+        "path": "/api/v1/sync",
+        "auth": true,
+        "params": {
+            "changes": "array",
+            "lastSync": "string"
+        },
+        "response": {
+            "syncedAt": "string",
+            "conflicts": "array"
+        },
+        "errors": [
+            {
+                "code": 401,
+                "message": "Unauthorized"
+            },
+            {
+                "code": 409,
+                "message": "Sync conflict detected"
+            }
+        ]
+    }
+]

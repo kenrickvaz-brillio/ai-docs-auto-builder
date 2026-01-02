@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "id": "ui",
+            "label": "Mobile UI",
+            "type": "component"
+        },
+        {
+            "id": "auth",
+            "label": "Auth Module",
+            "type": "module"
+        },
+        {
+            "id": "scan",
+            "label": "Scan Engine",
+            "type": "module"
+        },
+        {
+            "id": "sync",
+            "label": "Sync Engine",
+            "type": "module"
+        },
+        {
+            "id": "storage",
+            "label": "Local SQLite",
+            "type": "database"
+        },
+        {
+            "id": "api",
+            "label": "Backend API",
+            "type": "external"
+        }
+    ],
+    "edges": [
+        {
+            "from": "ui",
+            "to": "auth",
+            "label": "Login/Logout"
+        },
+        {
+            "from": "ui",
+            "to": "scan",
+            "label": "Trigger Scan"
+        },
+        {
+            "from": "ui",
+            "to": "sync",
+            "label": "Manual Sync"
+        },
+        {
+            "from": "scan",
+            "to": "storage",
+            "label": "Save Findings"
+        },
+        {
+            "from": "sync",
+            "to": "storage",
+            "label": "Read/Write"
+        },
+        {
+            "from": "sync",
+            "to": "api",
+            "label": "Push/Pull"
+        },
+        {
+            "from": "auth",
+            "to": "api",
+            "label": "Validate"
+        }
+    ]
+}

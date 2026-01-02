@@ -1,0 +1,50 @@
+[
+    {
+        "id": "pr-101",
+        "title": "Implement biometric login flow",
+        "author": "Alex Rivera",
+        "status": "merged"
+    },
+    {
+        "id": "pr-102",
+        "title": "Fix sync conflicts in multi-device scenarios",
+        "author": "Alex Rivera",
+        "status": "merged"
+    },
+    {
+        "id": "pr-103",
+        "title": "Optimize OCR processing for low-light images",
+        "author": "Mike Ross",
+        "status": "merged"
+    },
+    {
+        "id": "pr-104",
+        "title": "Add PDF export for audit summaries",
+        "author": "Alex Rivera",
+        "status": "merged"
+    },
+    {
+        "id": "pr-105",
+        "title": "Refactor auth module for better testability",
+        "author": "Sarah Chen",
+        "status": "merged"
+    },
+    {
+        "id": "pr-106",
+        "title": "Improve UI responsiveness on tablets",
+        "author": "Mike Ross",
+        "status": "merged"
+    },
+    {
+        "id": "pr-107",
+        "title": "Implement dark mode theme",
+        "author": "Sarah Chen",
+        "status": "merged"
+    },
+    {
+        "id": "pr-108",
+        "title": "Update API client to handle rate limiting",
+        "author": "Mike Ross",
+        "status": "merged"
+    }
+]

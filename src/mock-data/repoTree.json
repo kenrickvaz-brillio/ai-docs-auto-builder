@@ -1,0 +1,114 @@
+{
+    "name": "hotel-audits-mobile",
+    "type": "directory",
+    "children": [
+        {
+            "name": "src",
+            "type": "directory",
+            "children": [
+                {
+                    "name": "api",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "client.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "endpoints.ts",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "components",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "AuditCard.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "Scanner.tsx",
+                            "type": "file"
+                        },
+                        {
+                            "name": "SyncStatus.tsx",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "hooks",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "useAuth.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "useSync.ts",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "modules",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "auth.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "scan-engine.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "sync-engine.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "reports.ts",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "store",
+                    "type": "directory",
+                    "children": [
+                        {
+                            "name": "index.ts",
+                            "type": "file"
+                        },
+                        {
+                            "name": "auditSlice.ts",
+                            "type": "file"
+                        }
+                    ]
+                },
+                {
+                    "name": "App.tsx",
+                    "type": "file"
+                },
+                {
+                    "name": "index.tsx",
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "name": "package.json",
+            "type": "file"
+        },
+        {
+            "name": "tsconfig.json",
+            "type": "file"
+        },
+        {
+            "name": "README.md",
+            "type": "file"
+        }
+    ]
+}

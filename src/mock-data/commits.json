@@ -1,0 +1,141 @@
+[
+    {
+        "id": "c1a2b3c",
+        "message": "feat: implement offline sync for audit reports",
+        "author": "Sarah Chen",
+        "timestamp": "2023-10-25T10:30:00Z",
+        "touchedAreas": [
+            "Sync Engine",
+            "Storage"
+        ]
+    },
+    {
+        "id": "d4e5f6g",
+        "message": "fix: resolve crash on image upload in low connectivity",
+        "author": "Mike Ross",
+        "timestamp": "2023-10-26T14:20:00Z",
+        "touchedAreas": [
+            "Scan Engine",
+            "Network"
+        ]
+    },
+    {
+        "id": "h7i8j9k",
+        "message": "refactor: optimize database queries for audit history",
+        "author": "Sarah Chen",
+        "timestamp": "2023-10-27T09:15:00Z",
+        "touchedAreas": [
+            "Storage",
+            "Reports"
+        ]
+    },
+    {
+        "id": "l0m1n2o",
+        "message": "feat: add biometric authentication support",
+        "author": "Alex Rivera",
+        "timestamp": "2023-10-28T16:45:00Z",
+        "touchedAreas": [
+            "Auth"
+        ]
+    },
+    {
+        "id": "p3q4r5s",
+        "message": "docs: update API documentation for scan endpoints",
+        "author": "Mike Ross",
+        "timestamp": "2023-10-29T11:00:00Z",
+        "touchedAreas": [
+            "Docs"
+        ]
+    },
+    {
+        "id": "t6u7v8w",
+        "message": "fix: handle edge case in room number validation",
+        "author": "Sarah Chen",
+        "timestamp": "2023-10-30T13:30:00Z",
+        "touchedAreas": [
+            "Scan Engine"
+        ]
+    },
+    {
+        "id": "x9y0z1a",
+        "message": "feat: implement PDF export for audit summaries",
+        "author": "Alex Rivera",
+        "timestamp": "2023-10-31T15:20:00Z",
+        "touchedAreas": [
+            "Reports"
+        ]
+    },
+    {
+        "id": "b2c3d4e",
+        "message": "perf: reduce memory footprint of image processing",
+        "author": "Mike Ross",
+        "timestamp": "2023-11-01T10:10:00Z",
+        "touchedAreas": [
+            "Scan Engine"
+        ]
+    },
+    {
+        "id": "f5g6h7i",
+        "message": "feat: add dark mode support to UI",
+        "author": "Sarah Chen",
+        "timestamp": "2023-11-02T14:50:00Z",
+        "touchedAreas": [
+            "UI"
+        ]
+    },
+    {
+        "id": "j8k9l0m",
+        "message": "fix: sync conflicts when multiple devices edit same audit",
+        "author": "Alex Rivera",
+        "timestamp": "2023-11-03T09:40:00Z",
+        "touchedAreas": [
+            "Sync Engine"
+        ]
+    },
+    {
+        "id": "n1o2p3q",
+        "message": "chore: upgrade dependencies to latest versions",
+        "author": "Mike Ross",
+        "timestamp": "2023-11-04T11:25:00Z",
+        "touchedAreas": [
+            "Infrastructure"
+        ]
+    },
+    {
+        "id": "r4s5t6u",
+        "message": "feat: implement multi-language support (ES, FR)",
+        "author": "Sarah Chen",
+        "timestamp": "2023-11-05T16:15:00Z",
+        "touchedAreas": [
+            "UI",
+            "Localization"
+        ]
+    },
+    {
+        "id": "v7w8x9y",
+        "message": "fix: layout issues on smaller screen devices",
+        "author": "Mike Ross",
+        "timestamp": "2023-11-06T13:05:00Z",
+        "touchedAreas": [
+            "UI"
+        ]
+    },
+    {
+        "id": "z0a1b2c",
+        "message": "feat: add push notifications for assigned audits",
+        "author": "Alex Rivera",
+        "timestamp": "2023-11-07T10:55:00Z",
+        "touchedAreas": [
+            "Notifications"
+        ]
+    },
+    {
+        "id": "d3e4f5g",
+        "message": "refactor: clean up legacy auth code",
+        "author": "Sarah Chen",
+        "timestamp": "2023-11-08T15:40:00Z",
+        "touchedAreas": [
+            "Auth"
+        ]
+    }
+]

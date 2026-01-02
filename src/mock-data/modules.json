@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Scan Engine",
+        "description": "Handles image capture, OCR processing, and room number validation using on-device machine learning.",
+        "dependencies": [
+            "Storage",
+            "Network"
+        ]
+    },
+    {
+        "name": "Sync Engine",
+        "description": "Manages offline-first data synchronization, conflict resolution, and background uploads.",
+        "dependencies": [
+            "Storage",
+            "Network",
+            "Auth"
+        ]
+    },
+    {
+        "name": "Auth Module",
+        "description": "Handles user authentication, biometric login, and session management.",
+        "dependencies": [
+            "Storage",
+            "Network"
+        ]
+    },
+    {
+        "name": "Reports Module",
+        "description": "Generates PDF audit summaries, history visualizations, and data exports.",
+        "dependencies": [
+            "Storage"
+        ]
+    }
+]
