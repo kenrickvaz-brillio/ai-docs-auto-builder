@@ -63,7 +63,7 @@ export default function DocRenderer({ doc }: { doc: any }) {
                         <Zap className="w-6 h-6 text-indigo-600" />
                         Data Flows
                     </h2>
-                    <div className="bg-slate-900 rounded-2xl p-8 text-slate-300 font-mono text-sm space-y-4">
+                    <div className="bg-slate-900 rounded-2xl p-4 md:p-8 text-slate-300 font-mono text-sm space-y-4 overflow-x-auto">
                         {content.dataFlows.map((flow: string, i: number) => (
                             <div key={i} className="flex items-start gap-4">
                                 <span className="text-indigo-400 font-bold">{i + 1}.</span>
@@ -115,7 +115,7 @@ export default function DocRenderer({ doc }: { doc: any }) {
                     <div className="space-y-8">
                         {content.endpoints.map((api: any, i: number) => (
                             <div key={i} className="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-sm">
-                                <div className="px-6 py-4 bg-slate-50 border-b border-slate-200 flex items-center justify-between">
+                                <div className="px-4 md:px-6 py-4 bg-slate-50 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                                     <div className="flex items-center gap-3">
                                         <span className={cn(
                                             "px-2 py-1 rounded text-[10px] font-bold uppercase",
@@ -154,7 +154,7 @@ export default function DocRenderer({ doc }: { doc: any }) {
                         <AlertTriangle className="w-6 h-6 text-rose-500" />
                         Error Codes
                     </h2>
-                    <div className="overflow-hidden border border-slate-200 rounded-2xl">
+                    <div className="overflow-x-auto border border-slate-200 rounded-2xl">
                         <table className="w-full text-left text-sm">
                             <thead className="bg-slate-50 border-b border-slate-200">
                                 <tr>

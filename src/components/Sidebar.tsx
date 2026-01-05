@@ -9,7 +9,8 @@ import {
     Library,
     Settings,
     FileText,
-    ChevronRight
+    ChevronRight,
+    X
 } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -26,16 +27,28 @@ const navItems = [
     { name: 'Settings', href: '/settings', icon: Settings },
 ];
 
-export default function Sidebar() {
+interface SidebarProps {
+    onClose?: () => void;
+}
+
+export default function Sidebar({ onClose }: SidebarProps) {
     const pathname = usePathname();
 
     return (
         <div className="w-64 bg-slate-900 text-white h-screen flex flex-col border-r border-slate-800">
-            <div className="p-6 flex items-center gap-3">
-                <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
-                    <FileText className="w-5 h-5 text-white" />
+            <div className="p-6 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center">
+                        <FileText className="w-5 h-5 text-white" />
+                    </div>
+                    <span className="font-bold text-xl tracking-tight">DocBuilder AI</span>
                 </div>
-                <span className="font-bold text-xl tracking-tight">DocBuilder AI</span>
+                <button
+                    onClick={onClose}
+                    className="p-2 -mr-2 text-slate-400 hover:text-white lg:hidden"
+                >
+                    <X className="w-5 h-5" />
+                </button>
             </div>
 
             <nav className="flex-1 px-4 py-4 space-y-1">

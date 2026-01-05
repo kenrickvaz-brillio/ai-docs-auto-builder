@@ -124,10 +124,10 @@ export default function Wizard() {
     return (
         <div className="max-w-4xl mx-auto">
             {/* Stepper */}
-            <div className="flex items-center justify-between mb-12 relative">
-                <div className="absolute top-1/2 left-0 w-full h-0.5 bg-slate-200 -translate-y-1/2 z-0"></div>
+            <div className="flex items-center justify-between mb-12 relative overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-0 no-scrollbar">
+                <div className="absolute top-5 left-0 w-full h-0.5 bg-slate-200 z-0 hidden md:block"></div>
                 {STEPS.map((step, i) => (
-                    <div key={step.id} className="relative z-10 flex flex-col items-center">
+                    <div key={step.id} className="relative z-10 flex flex-col items-center min-w-[80px]">
                         <div className={cn(
                             "w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300",
                             i < currentStep ? "bg-emerald-500 text-white" :
@@ -250,7 +250,7 @@ export default function Wizard() {
                             <div className="space-y-6">
                                 <div>
                                     <label className="text-sm font-bold text-slate-700 block mb-3">Tone & Detail Level</label>
-                                    <div className="grid grid-cols-3 gap-3">
+                                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                         {['concise', 'standard', 'detailed'].map((t) => (
                                             <button
                                                 key={t}
@@ -268,7 +268,7 @@ export default function Wizard() {
 
                                 <div>
                                     <label className="text-sm font-bold text-slate-700 block mb-3">Target Audience</label>
-                                    <div className="grid grid-cols-3 gap-3">
+                                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                         {[
                                             { id: 'dev', label: 'Developers', icon: Code2 },
                                             { id: 'ops', label: 'DevOps/SRE', icon: Users },
@@ -299,7 +299,7 @@ export default function Wizard() {
                                 <p className="text-slate-500 mt-1">Review your selections before starting the generation.</p>
                             </div>
 
-                            <div className="grid grid-cols-2 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-4">
                                     <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
                                         <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Sources</p>

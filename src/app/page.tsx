@@ -25,14 +25,14 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-8">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-3xl font-bold text-slate-900">Project Overview</h1>
           <p className="text-slate-500 mt-1">Welcome back! Here's what's happening with Hotel Audits Mobile.</p>
         </div>
         <Link
           href="/generate"
-          className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-xl font-semibold flex items-center gap-2 transition-all shadow-lg shadow-indigo-500/25"
+          className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-xl font-semibold flex items-center gap-2 transition-all shadow-lg shadow-indigo-500/25 w-full sm:w-auto justify-center"
         >
           <Wand2 className="w-4 h-4" />
           Generate Docs
@@ -83,10 +83,10 @@ export default function Dashboard() {
                   <Link
                     key={doc.id}
                     href={`/docs?id=${doc.id}`}
-                    className="flex items-center justify-between py-4 hover:bg-slate-50 -mx-6 px-6 transition-colors group"
+                    className="flex flex-col sm:flex-row sm:items-center justify-between py-4 hover:bg-slate-50 -mx-6 px-6 transition-colors group gap-4"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-500 group-hover:bg-indigo-50 group-hover:text-indigo-600 transition-colors">
+                      <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-500 group-hover:bg-indigo-50 group-hover:text-indigo-600 transition-colors shrink-0">
                         <FileText className="w-5 h-5" />
                       </div>
                       <div>
@@ -97,7 +97,7 @@ export default function Dashboard() {
                         </p>
                       </div>
                     </div>
-                    <div className="text-right">
+                    <div className="sm:text-right pl-14 sm:pl-0">
                       <p className="text-sm font-semibold text-slate-700">{doc.versionTag}</p>
                       <p className="text-[10px] text-slate-400 mt-1">Deterministic Hash: {doc.inputsHash}</p>
                     </div>
