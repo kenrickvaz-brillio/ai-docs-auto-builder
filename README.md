@@ -2,6 +2,8 @@
 
 A polished, deterministic static demo of an AI-powered documentation builder. This application simulates the entire flow of analyzing a repository and generating structured documentation without any real backend or LLM calls.
 
+**[Live Demo](https://green-cliff-01568371e.4.azurestaticapps.net)**
+
 ## Features
 - **Deterministic Generation**: Same inputs (sources, commits, config) always produce the same documentation output using seeded pseudo-randomness.
 - **Multi-Step Wizard**: A realistic 5-step generation flow with staged progress animations.
